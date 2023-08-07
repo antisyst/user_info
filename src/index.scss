@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  user-select: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --var-color-white: #ffff;
+  --var-color-black: #000;
+  --var-color-main: #16161E;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  min-height: 100vh;
+  background: var(--var-color-main);
+  font-family: 'IBM Plex Mono', monospace;
+  max-height: max-content;
+}
+.first_content {
+  font-weight: bold;
+  font-size: calc(10px + 4vmin);
+  color: var(--var-color-white);
+}
+.action_display {
+  padding: 0 10%;
+}
+.action_display_info {
+  color: var(--var-color-white);
+
+  p {
+    margin: 5px 0;
+    font-size: 22px;
+    span {
+      font-weight: bold;
+    }
+  }
+}
